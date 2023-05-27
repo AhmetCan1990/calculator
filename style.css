@@ -5,21 +5,43 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: white;
   font-size: 1.7rem;
+}
+.mainbox {
+  width: 330px;
+  height: 600px;
+  background-color: black;
+  border-radius: 50px;
+  margin: 50px auto;
+  padding: 5px;
+}
+.screen {
+  width: 300px;
+  height: 150px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.screeninside {
+  width: 270px;
+  height: 85px;
+  background-color: white;
+  margin: 1rem auto;
 }
 .container {
   display: grid;
-  grid-template-columns: 60px 60px 60px 60px;
-  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
   background-color: black;
+  color: white;
   justify-content: center;
-  align-content: end;
-  border-radius: 30px;
-  margin: 50px auto;
+  align-content: center;
+  border-radius: 50px;
+  margin: 0 auto;
   padding: 20px;
   width: 320px;
-  height: 550px;
+  height: 400px;
   gap: 10px;
 }
 .item {
@@ -37,11 +59,11 @@ body {
   opacity: 0.2;
 }
 .silver {
-  background-color: #a5a5a5 !important;
+  background-color: #a5a5a5;
   color: black;
 }
 .orange {
-  background-color: orange !important;
+  background-color: orange;
 }
 .zero {
   grid-column-start: 1;
